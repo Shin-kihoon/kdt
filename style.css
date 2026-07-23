@@ -1,0 +1,131 @@
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --text: #f0f6fc;
+  --accent: #58a6ff;
+  --accent-strong: #1f6feb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #192139 0%, #0d1117 65%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 80px 24px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(14, 19, 32, 0.95), rgba(13, 17, 23, 0.85));
+}
+
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+}
+
+.hero p {
+  margin: 0 auto 28px;
+  max-width: 36rem;
+  line-height: 1.75;
+  color: #cdd9e5;
+}
+
+button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(64, 132, 255, 0.22);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: rgba(19, 24, 32, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
+  padding-left: 1.4rem;
+}
+
+.card li {
+  margin-bottom: 0.75rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  color: #8b949e;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 9, 17, 0.7);
+  z-index: 10;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-inner {
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 30px;
+  width: min(92vw, 520px);
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.35);
+}
+
+.modal-close {
+  appearance: none;
+  border: none;
+  color: #cdd9e5;
+  background: transparent;
+  font-size: 1.2rem;
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .container {
+    padding: 24px 16px;
+  }
+}
