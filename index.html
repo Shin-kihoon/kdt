@@ -1,5 +1,55 @@
-<html>
-  <head>
-    <title> my home</title>
-  </head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub 소개</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>GitHub 소개 페이지</h1>
+      <p>프로젝트 버전 관리, 협업, 오픈 소스 공유를 쉽게 만드는 도구입니다.</p>
+      <button id="learn-btn">더 알아보기</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>GitHub란?</h2>
+      <p>GitHub는 Git을 기반으로 한 코드 호스팅 플랫폼입니다. 소스 코드 저장, 브랜치, 풀 리퀘스트, 이슈를 관리할 수 있습니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>기본 기능</h2>
+      <ul>
+        <li>버전 관리</li>
+        <li>협업</li>
+        <li>오픈 소스 프로젝트</li>
+        <li>이슈 트래킹</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>간단한 소개</h2>
+      <p>GitHub를 사용하면 팀과 함께 효율적으로 작업하고, 변경 사항을 추적하며, 전 세계 개발자와 지식을 공유할 수 있습니다.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>HTML / CSS / JavaScript 기초 예제</p>
+  </footer>
+
+  <div class="modal" id="info-modal">
+    <div class="modal-inner">
+      <button class="modal-close" id="close-modal">✕</button>
+      <h3>GitHub 사용 팁</h3>
+      <p>리포지토리를 만들고 커밋한 뒤, 원격으로 푸시하면 다른 사람과 공유할 수 있습니다.</p>
+      <p>브랜치를 활용하면 안전하게 기능을 추가하고, 풀 리퀘스트로 변경 내용을 검토할 수 있습니다.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
